@@ -36,6 +36,10 @@ enum sf::Keyboard::Key AllowedKeys[] = {
 	sf::Keyboard::Num8,
 	sf::Keyboard::Num9,
 	sf::Keyboard::LShift,
+	sf::Keyboard::Comma,
+	sf::Keyboard::Period,
+	sf::Keyboard::Quote,
+	sf::Keyboard::Slash,
 	sf::Keyboard::Space,
 	sf::Keyboard::Return	
 };
