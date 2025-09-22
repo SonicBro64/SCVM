@@ -22,8 +22,9 @@ int main() {
 		{
 	        if (event.type == sf::Event::Closed) window.close();
 	        int AKSize = sizeof(AllowedKeys) / sizeof(AllowedKeys[0]);
-	        for (int i=1; i<=AKSize; i++)
-				if (sf::Keyboard::isKeyPressed(AllowedKeys[i])) VMkeys[0] = i;
+	        for (int i=1; i<=AKSize; i++) {
+	        	if (sf::Keyboard::isKeyPressed(AllowedKeys[i])) VMkeys[0] = i;
+			}
 		}
 		window.clear();
 		scrntex.update(RGBAFrmBuff);
