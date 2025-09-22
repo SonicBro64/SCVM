@@ -16,21 +16,19 @@ int main() {
     if (!scrntex.create(WIDTH, HEIGHT)) return -1;
     sf::Sprite screen(scrntex);
 	
-	while (window.isOpen())
+	while (window.isOpen()) {
 		sf::Event event;
 	    while (window.pollEvent(event))
 		{
 	        if (event.type == sf::Event::Closed) window.close();
 	        int AKSize = sizeof(AllowedKeys) / sizeof(AllowedKeys[0]);
-	        for (int i=1; i<=AKsize; i++)
-				if (sf::Keyboard::isKeyPressed(AllowedKeys[i]))
-			}
-			
+	        for (int i=1; i<=AKSize; i++)
+				if (sf::Keyboard::isKeyPressed(AllowedKeys[i])) VMkeys[0] = i;
 		}
 		window.clear();
 		scrntex.update(RGBAFrmBuff);
 		window.draw(screen);
 		window.display();
 	}
-		
+	return 0;
 }
