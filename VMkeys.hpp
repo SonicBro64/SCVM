@@ -1,4 +1,7 @@
 enum sf::Keyboard::Key AllowedKeys[] = {
+	sf::Keyboard::A,
+	sf::Keyboard::B,
+	sf::Keyboard::C,
 	sf::Keyboard::D,
 	sf::Keyboard::E,
 	sf::Keyboard::F,
@@ -36,3 +39,5 @@ enum sf::Keyboard::Key AllowedKeys[] = {
 	sf::Keyboard::Space,
 	sf::Keyboard::Return	
 };
+
+Byte VMkeys[3]; 
